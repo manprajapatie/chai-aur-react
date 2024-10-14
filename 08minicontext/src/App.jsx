@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import UserContextProvider from './context/UserContextProvider'
 import './App.css'
+import UserContextProvider from './context/UserContextProvider'
+import Login from './context/Component/Login'
+import Profile from './context/Component/Profile'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <UserContextProvider>  
-      <div>
+      
         <h1>
           My Name is project abstract
         </h1>
-        </div>
+        <Login />
+        <Profile />
        
         </UserContextProvider>
   )
